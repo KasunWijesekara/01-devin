@@ -3,9 +3,10 @@ import HomeHero from "@/components/home-hero";
 import HomeStats from "@/components/home-stats";
 import React from "react";
 import HomeTeams from "@/components/home-teams";
-import HomeContact from "@/components/home-contact";
+// import HomeContact from "@/components/home-contact"; // This line is commented out
 import HomeCta from "@/components/home-cta";
 import HomeContacts from "@/components/home-contacts";
+import HomePricing from "@/components/home-pricing"; // New import for the pricing section
 import Script from "next/script";
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
+
           gtag('config', 'G-LCMNGJK8DE');
         `}
         </Script>
@@ -30,6 +31,7 @@ const Home = () => {
       <HomeTeams />
       {/* <HomeContact /> */}
       <HomeContacts />
+      <HomePricing /> {/* New pricing section added */}
     </div>
   );
 };
